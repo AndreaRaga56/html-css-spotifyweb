@@ -10,7 +10,7 @@
 
 main{
     width: 100%;
-    height: 100vh;
+    height: 90vh;
     display: flex;
 }
 
@@ -18,7 +18,7 @@ footer{
     display: flex;
     position: fixed;
     z-index: 100;
-    height: 70px;
+    height: 10vh;
     width: 100%;
     background-color: #282828;
     bottom: 0;
@@ -32,10 +32,11 @@ footer{
     width: 30px;
     overflow: auto;
     position: relative;
+    color: #717171;
+    font-size: 12px;
 }
 
 .sx-header{
-    color: #717171;
     width: 100%;
     margin-bottom: 10px;
 }
@@ -70,13 +71,80 @@ ul{
 
 .playlist{
     overflow: auto;
-    min-height: 25%;
+    height: 58vh;
+    margin-left: 8px;
     display: none;
 }
 
-.playlist h2{
+.playlist h5{
     color: white;
+    margin-bottom: 8px;
+    font-weight: 600px;
 }
+
+.new-playlist{
+    font-size: 30px;
+    color: white;
+    margin-right: 4px;
+    vertical-align: middle; 
+}
+
+.beside{
+    vertical-align: middle;
+    font-weight: 600;
+}
+
+.playlist li{
+    margin-top: 8px;
+}
+
+.install{
+    margin-top: 58vh;
+    padding: 15px 0px 10px;
+}
+
+.dl{
+    margin-right: 4px;
+    margin-left: 6px;
+    vertical-align: middle; 
+    display:inline-block;
+    max-width: 16px;
+    padding-bottom: 9px;
+}
+
+.beside-dl{
+    font-weight: 300;
+    vertical-align: middle; 
+    display: none;
+}
+
+.user{
+    padding: 0px;
+}
+
+.u{
+    margin: 4px 1px;
+    vertical-align: middle; 
+    display:inline-block;
+    width: 28px;
+    height: 28px;
+    background-color: #717171;
+    border-radius: 50%;
+}
+
+.beside-u{
+    font-weight: 600;
+    vertical-align: middle;
+    color: white;
+    display: none;
+}
+
+.sx hr{
+    color: #717171;
+    margin:4px 8px 0px;
+    display: none;
+}
+
 
 
 
@@ -118,8 +186,38 @@ ul{
 
     .playlist{
         display: block;
+        margin-bottom: 15px;;
     }
     
+    .sx hr{
+        display: block;
+    }
+
+    .beside-dl,
+    .beside-u{
+        display: inline-block;
+    }
+
+    .dl{
+        margin-left: 5px;
+        padding: 0px;
+    }
+
+    .u{
+        margin-right: 4px;
+        margin-left: 8px;
+    }
+
+    .user{
+        padding: 0px;
+    }
+
+    .install{
+        margin-top: 0;
+    }
+
+
+
 }
 
 /* Cell Grande o Tablet Verticale */
