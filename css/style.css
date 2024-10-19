@@ -202,31 +202,32 @@ li a{
 .dx h2{
     color: white;
     margin-top: 18px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .recently{
-    padding-top: 10px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
+    gap: 15px;
 }
 
 .card{
-    min-height: 180px;
-    width: 48%;
-    background-color: aqua;
+    padding-top: 15px;
+    width: calc((100% - 15px) / 2);
 }
 
-.card-img{
-    max-width: 100%;
+.card img{
+    width: 100%;
 }
 
-.centra{
+.card h3{
     text-align: center;
-    margin-top: 10px;
+    margin: 7px 0px 3px;
+    color: white;
+}
+
+.card p{
+    text-align: center;
 }
 
 
@@ -308,11 +309,29 @@ li a{
 /* Cell Grande o Tablet Verticale */
 @media screen and (min-width:768px) {
 
+    .card{
+        width: calc((100% - 45px)/4);
+    }
+
+    .container{
+        width: 95%;
+        margin: 0 auto;
+    }
+
 }
 
 
 
 /* Tablet Orizzontale o PC */
 @media screen and (min-width:1280px) {
+
+    .card{
+        width: calc((100% - 75px) / 6);
+    }
+
+    .container{
+        width: 97%;
+        margin: 0 auto;
+    }
 
 }
