@@ -201,11 +201,11 @@ li a{
 }
 .dx h2{
     color: white;
-    margin-top: 18px;
-    margin-bottom: 5px;
+    margin-top: 22px;
 }
 
-.recently{
+.flex-dx{
+    margin-top:5px;
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
@@ -228,6 +228,10 @@ li a{
 
 .card p{
     text-align: center;
+}
+
+.tondo{
+    border-radius: 50%;
 }
 
 
